@@ -45,79 +45,13 @@ void timer0100us_start(void) {
 *   Modify the following 3 functions to implement your own pin configurations...
 */
 void SetOuts(volatile uint8_t in) {
-	//PORTD|= (((in & (1<<3))<<4) | ((in & (1<<4))<<1) | ((in & (1<<5))<<1));
-	//PORTB|= (((in & (1<<0))<<2) | ((in & (1<<1))) | ((in & (1<<2))>>2));
-	//in=~in;
-	//PORTB&= ~(((in & (1<<0))<<2) | ((in & (1<<1))) | ((in & (1<<2))>>2));
-	//PORTD&= ~(((in & (1<<3))<<4) | ((in & (1<<4))<<1) | ((in & (1<<5))<<1));
-
-	/*
-	if (READp(in,0) == HIGH)
-	{
-		SET(B,2);
-	} 
-	else
-	{
-		CLEAR(B,2);
-	}
-
-
-
-		if (READp(in,1) == HIGH)
-		{
-			SET(B,3);
-		}
-		else
-		{
-			CLEAR(B,3);
-		}
-
-
-
-			if (READp(in,2) == HIGH)
-			{
-				SET(B,4);
-			}
-			else
-			{
-				CLEAR(B,4);
-			}
-
-
-				if (READp(in,3) == HIGH)
-				{
-					SET(B,5);
-				}
-				else
-				{
-					CLEAR(B,5);
-				}
-				*/
-
-
+	
 				PORTB =(PORTB & 0b11000011) | (in << 2);
 
 }
 
 uint8_t ReadIns(void) {
 	uint8_t ins=0x00;
-	//ins|=(PINC&((1<<0)|(1<<1)|(1<<2)|(1<<3)|(1<<4)|(1<<5)));
-	//ins|=(((PIND&(1<<4))<<2)|((PIND&(1<<3))<<4));
-
-
-	//ins = (PINB&(1<<0) << 1);
-
-
-
-	//if (READ(B,0) == LOW)
-	//{
-	//ins = (0b00000001);
-	//} 
-	//else
-	//{
-	//ins = (0b00000000);
-	//}
-	//
 
 	ins = (PIND >>2 ) ;
 
@@ -129,24 +63,8 @@ uint8_t ReadIns(void) {
 
 
 void io_conf(void) { 
-	/*
-	 Outputs: PD6
-	 Inputs: PC0, PC1, PC2, PC3, PC4, PC5, PD4, PD3
-	*/
-	//DDRD=0x00;
-	//DDRB=0x00;
-	//DDRC=0x00;
-	//PORTD=0x00;
-	//PORTB=0x00;
-	//PORTC=0x00;
-	//PORTD|=(1<<0);
-	//DDRD |= (1<<2)|(1<<5)|(1<<6)|(1<<7);
-	//DDRB |= (1<<0)|(1<<1)|(1<<2)|(1<<3);
 
-	OUTPUT(B,5);
-	OUTPUT(B,4);
-	OUTPUT(B,3);
-	OUTPUT(B,2);
+	DDRB = 0xff;
 
 
 }
@@ -316,14 +234,9 @@ static void setup_adc(void)  // by ADC SETUP
 
 int main(void)
 {
-	
-	OUTPUT(B,0);
-	OUTPUT(B,1);
 
 
-	OUTPUT(B,5);
 
-	DDRB = 0xff;
 
 	io_conf();
 
