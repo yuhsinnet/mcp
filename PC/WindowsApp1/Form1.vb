@@ -16,6 +16,7 @@ Public Class Form1
         cc.Parity = System.IO.Ports.Parity.None
         cc.StopBits = System.IO.Ports.StopBits.One
 
+        Button1.Enabled = False
 
 
     End Sub
@@ -39,6 +40,8 @@ Public Class Form1
             Timer1.Enabled = True
 
             Connect_But.Text = "Close"
+            Button1.Enabled = True
+
 
         Else
 
@@ -47,7 +50,7 @@ Public Class Form1
 
             cc.Disconnect()
 
-
+            Button1.Enabled = False
             Connect_But.Text = "Connect"
         End If
 
@@ -66,11 +69,19 @@ Public Class Form1
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-
+        Button1.BackColor = Color.FromKnownColor(KnownColor.LightPink)
         Dim Reg() As Integer = {CInt(TextBox2.Text), CInt(TextBox3.Text)}
 
         cc.WriteMultipleRegisters(0, Reg)
 
+        Timer2.Enabled = True
+    End Sub
+
+    Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
+
+        Button1.BackColor = Color.FromKnownColor(KnownColor.Control)
+
+        Timer2.Enabled = False
 
     End Sub
 End Class

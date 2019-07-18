@@ -29,6 +29,7 @@ Partial Class Form1
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.SuspendLayout()
         '
         'TextBox1
@@ -71,8 +72,12 @@ Partial Class Form1
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 4
-        Me.Button1.Text = "Button1"
+        Me.Button1.Text = "寫入設定"
         Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Timer2
+        '
+        Me.Timer2.Interval = 250
         '
         'Form1
         '
@@ -97,4 +102,5 @@ Partial Class Form1
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents TextBox3 As TextBox
     Friend WithEvents Button1 As Button
+    Friend WithEvents Timer2 As Timer
 End Class
