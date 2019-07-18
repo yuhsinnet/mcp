@@ -38,8 +38,9 @@ volatile uint16_t holdingRegisters[4];
 volatile uint16_t adc_results[4];
 
 
-uint16_t EEMEM uplimit;
-uint16_t EEMEM downlimit;
+uint16_t EEMEM eeprom[4];
+
+
 
 
 void timer0100us_start(void) {
@@ -81,6 +82,8 @@ ISR(TIMER0_OVF_vect) { //this ISR is called 9765.625 times per second
 	
 
 }
+
+
 
 void modbusGet(void) {
 
@@ -135,8 +138,8 @@ void modbusGet(void) {
 
 				//寫入eeprom//
 
-				eeprom_update_word(&uplimit,holdingRegisters[0]);
-
+				eeprom_update_block((const void*) &holdingRegisters,(void*) &eeprom,8);
+				eeprom_busy_wait();
 				//寫入eeprom//
 
 			}
@@ -150,6 +153,13 @@ void modbusGet(void) {
 			
 			case fcPresetMultipleRegisters: {//寫多個保持寄存器//
 				modbusExchangeRegisters(holdingRegisters,0,4);
+
+				//寫入eeprom//
+
+				eeprom_update_block((const void*) &holdingRegisters,(void*) &eeprom,8);
+				eeprom_busy_wait();
+				//寫入eeprom//
+
 			}
 			break;
 			
@@ -265,7 +275,7 @@ int main(void)
     
 	timer0100us_start();
 
-
+	eeprom_read_block((void*) &holdingRegisters,(const void*) &eeprom,8);
 	
 
 wdt_enable(7);
