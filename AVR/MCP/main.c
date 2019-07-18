@@ -28,6 +28,7 @@
 #include "yaMBSiavr.h"
 #include "ioconfig.h"
 #include <util/delay.h>
+#include <avr/eeprom.h>
 
 volatile uint8_t instate = 0;
 volatile uint8_t outstate = 0;
@@ -35,6 +36,11 @@ volatile uint16_t inputRegisters[8];
 volatile uint16_t holdingRegisters[4];
 
 volatile uint16_t adc_results[4];
+
+
+uint16_t EEMEM uplimit;
+uint16_t EEMEM downlimit;
+
 
 void timer0100us_start(void) {
 	TCCR0B|=(1<<CS01); //prescaler 8
@@ -97,45 +103,52 @@ void modbusGet(void) {
 	if (modbusGetBusState() & (1<<ReceiveCompleted))
 	{
 		switch(rxbuffer[1]) {
-			case fcReadCoilStatus: {
+			case fcReadCoilStatus: {//讀線圈寄存器//
 				modbusExchangeBits(&outstate,0,8);
 			}
 			break;
 			
-			case fcReadInputStatus: {
-				volatile uint8_t inps = ReadIns(); //change by test
-				modbusExchangeBits(&inps,0,8);
+			case fcReadInputStatus: {//讀離散輸入寄存器//
+				volatile uint8_t inps = ReadIns(); 
+				modbusExchangeBits(&inps,0,8); //讀取ADC 值//
 			}
 			break;
 			
-			case fcReadHoldingRegisters: {
+			case fcReadHoldingRegisters: {//讀保持寄存器//
 				modbusExchangeRegisters(holdingRegisters,0,4);
 			}
 			break;
 			
-			case fcReadInputRegisters: {
+			case fcReadInputRegisters: {//讀輸入寄存器//
 				modbusExchangeRegisters(inputRegisters,0,8);
 			}
 			break;
 			
-			case fcForceSingleCoil: {
+			case fcForceSingleCoil: {//寫單個線圈寄存器//
 				modbusExchangeBits(&outstate,0,8);
 				SetOuts(outstate);
 			}
 			break;
 			
-			case fcPresetSingleRegister: {
+			case fcPresetSingleRegister: {//寫單個保持寄存器//
 				modbusExchangeRegisters(holdingRegisters,0,4);
+
+				//寫入eeprom//
+
+				eeprom_update_word(&uplimit,holdingRegisters[0]);
+
+				//寫入eeprom//
+
 			}
 			break;
 			
-			case fcForceMultipleCoils: {
+			case fcForceMultipleCoils: {//寫多個線圈寄存器//
 				modbusExchangeBits(&outstate,0,8);
 				SetOuts(outstate);
 			}
 			break;
 			
-			case fcPresetMultipleRegisters: {
+			case fcPresetMultipleRegisters: {//寫多個保持寄存器//
 				modbusExchangeRegisters(holdingRegisters,0,4);
 			}
 			break;
@@ -231,6 +244,10 @@ static void setup_adc(void)  // by ADC SETUP
 	/* Trigger first conversion */
 	ADCSRA |= (1 << ADSC);
 }
+
+
+
+
 
 int main(void)
 {
