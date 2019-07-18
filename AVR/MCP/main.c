@@ -40,7 +40,16 @@ volatile uint16_t adc_results[4];
 
 uint16_t EEMEM eeprom[4];
 
+void time1ms_start(void){
 
+	TCCR2A |= (1<<WGM21);
+	TCCR2B |= (1<<CS22)|(1<<CS21);
+	TIMSK2 |= (1<< OCIE2A);
+	TIFR2 |= (1<<OCF2A);
+	OCR2A = 38;
+
+
+}
 
 
 void timer0100us_start(void) {
@@ -72,6 +81,19 @@ uint8_t ReadIns(void) {
 void io_conf(void) { 
 
 	DDRB = 0xff;
+
+
+}
+
+ISR(TIMER2_COMPA_vect)
+{
+		static uint16_t i;
+
+			if (i++ >250)
+			{
+				TOGGLE(B,1);
+				i = 0;
+			}
 
 
 }
@@ -183,20 +205,7 @@ ISR(ADC_vect)
 {
 
 
-		static uint16_t i;
-		static uint16_t j;
 
-		if (j++ >100)
-		{
-			
-			if (i++ >20)
-			{
-				TOGGLE(B,1);
-				i = 0;
-			}
-
-			j=0;
-		}
 		
 
 		static uint8_t first_convervision = 1;
@@ -269,12 +278,16 @@ int main(void)
 
 	setup_adc();
 
-	sei();
+	
 	modbusSetAddress(clientAddress);
 	modbusInit();
     
 	timer0100us_start();
+	time1ms_start();
 
+
+
+sei();
 	eeprom_read_block((void*) &holdingRegisters,(const void*) &eeprom,8);
 	
 
@@ -283,21 +296,45 @@ wdt_enable(7);
     {
 		wdt_reset();
 	    modbusGet();
+		uint8_t OutTmp=0;
 
 
-uint8_t tmp=0;
-		if (READ(D,7) == HIGH)
+		if ((READ(D,7) == LOW ) & (READ(D,6) == LOW))
+		{
+			SETp(OutTmp,3);
+
+
+
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+		/*
+		if ((inputRegisters[0] > holdingRegisters[0]) &(inputRegisters[0] < holdingRegisters[1]) )
 		{
 		
-		SETp(tmp,3);
+		
 			
 
 		}
 		else
 		{
-			CLEARp(tmp,3);
+			CLEARp(OutTmp,3);
 		}
-SetOuts(tmp);
+
+		*/
+
+SetOuts(OutTmp);
 
     }
 }
