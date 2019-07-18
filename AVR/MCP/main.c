@@ -40,6 +40,12 @@ volatile uint16_t adc_results[4];
 
 uint16_t EEMEM eeprom[4];
 
+bool timer01_start;
+bool timer01_up;
+
+bool timer02_start;
+bool timer02_up;
+
 void time1ms_start(void){
 
 	TCCR2A |= (1<<WGM21);
@@ -85,15 +91,51 @@ void io_conf(void) {
 
 }
 
-ISR(TIMER2_COMPA_vect)
+ISR(TIMER2_COMPA_vect)//this ISR is called 1001.6025 times per second
 {
 		static uint16_t i;
+		static uint16_t timer01_CV;
+		static uint16_t timer02_CV;
 
-			if (i++ >250)
+
+			if (i++ >500)
 			{
 				TOGGLE(B,1);
 				i = 0;
 			}
+
+			if (timer01_start == true)
+			{
+				if (timer01_CV++ > 5000)
+				{
+					timer01_up = true;
+					timer01_CV = 0;
+				}
+			} 
+			else
+			{
+
+				timer01_CV = 0;
+				timer01_up =false;
+
+			}
+			//////////////////////////////////////////////////////////////////////////
+			if (timer02_start == true)
+			{
+				if (timer02_CV++ > 1000)
+				{
+					timer02_up = true;
+					timer02_CV = 0;
+				}
+			}
+			else
+			{
+
+				timer02_CV = 0;
+				timer02_up =false;
+
+			}
+
 
 
 }
@@ -296,45 +338,64 @@ wdt_enable(7);
     {
 		wdt_reset();
 	    modbusGet();
-		uint8_t OutTmp=0;
 
+		static bool error_cour = false;
 
-		if ((READ(D,7) == LOW ) & (READ(D,6) == LOW))
+		if (READ(D,2) == LOW)
 		{
-			SETp(OutTmp,3);
-
-
-
+			error_cour = false;//清除錯誤狀態
+			CLEARp(outstate,0);
 		}
 
+		bool in_coura_zone = (inputRegisters[0] > holdingRegisters[0]) &(inputRegisters[0] < holdingRegisters[1]);
+		//bool active_mode = (READ(D,7) == LOW ) & (READ(D,6) == LOW);
+		bool active_mode = (READ(D,7) == LOW );
 
-
-
-
-
-
-
-
-
-
-
-
-		/*
-		if ((inputRegisters[0] > holdingRegisters[0]) &(inputRegisters[0] < holdingRegisters[1]) )
+		if (error_cour == false)
 		{
-		
-		
-			
 
-		}
-		else
-		{
-			CLEARp(OutTmp,3);
-		}
+					if (active_mode)
+					{
+						SETp(outstate,3);
+						timer01_start = true;
+						if (timer01_up == true)
+						{		
+									if ( in_coura_zone == false )
+									{
+										CLEARp(outstate,3);
+										error_cour = true;
+									}
+						}
 
-		*/
 
-SetOuts(OutTmp);
+					}
+					else
+					{
+						CLEARp(outstate,3);
+						timer01_start = false;
+					}
+
+
+			}
+			else
+			{
+				CLEARp(outstate,3);
+				timer01_start = false;
+
+
+				timer02_start = true ;
+				if (timer02_up == true )
+				{
+					TOGGLEp(outstate,0);
+					timer02_up = false;
+					timer02_start = false;
+				}
+
+
+			}
+
+
+SetOuts(outstate);
 
     }
 }
