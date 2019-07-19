@@ -7,6 +7,10 @@ Public Class Form1
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+        TextBox2.ImeMode = ImeMode.Off
+        TextBox3.ImeMode = ImeMode.Off
+
+
         For Each port As String In My.Computer.Ports.SerialPortNames
 
             ComboBox1.Items.Add(port)
