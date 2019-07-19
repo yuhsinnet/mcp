@@ -7,9 +7,14 @@ Public Class Form1
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+        For Each port As String In My.Computer.Ports.SerialPortNames
 
+            ComboBox1.Items.Add(port)
 
-        cc = New ModbusClient("com3")
+        Next
+        ComboBox1.SelectedIndex = 0
+
+        cc = New ModbusClient(ComboBox1.SelectedItem.ToString())
         'cc.LogFileFilename = "C:\Users\SG\Source\gitProject\mcp\PC\WindowsApp1\modbus_log.txt"
         cc.Disconnect()
         cc.Baudrate = 38400

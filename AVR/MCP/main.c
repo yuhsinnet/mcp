@@ -348,8 +348,8 @@ wdt_enable(7);
 		}
 
 		bool in_coura_zone = (inputRegisters[0] > holdingRegisters[0]) &(inputRegisters[0] < holdingRegisters[1]);
-		//bool active_mode = (READ(D,7) == LOW ) & (READ(D,6) == LOW);
-		bool active_mode = (READ(D,7) == LOW );
+		bool active_mode = (READ(D,7) == LOW ) & (READ(D,6) == LOW);
+		//bool active_mode = (READ(D,7) == LOW );
 
 		if (error_cour == false)
 		{
