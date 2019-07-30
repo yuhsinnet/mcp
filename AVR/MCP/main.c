@@ -38,7 +38,7 @@ volatile uint16_t holdingRegisters[4];
 volatile uint16_t adc_results[4];
 
 
-uint16_t EEMEM eeprom[4];
+uint16_t EEMEM myeeprom[4];
 
 bool timer01_start;
 bool timer01_up;
@@ -202,7 +202,7 @@ void modbusGet(void) {
 
 				//寫入eeprom//
 
-				eeprom_update_block((const void*) &holdingRegisters,(void*) &eeprom,8);
+				eeprom_update_block((const void*) &holdingRegisters,(void*) &myeeprom,8);
 				eeprom_busy_wait();
 				//寫入eeprom//
 
@@ -220,7 +220,7 @@ void modbusGet(void) {
 
 				//寫入eeprom//
 
-				eeprom_update_block((const void*) &holdingRegisters,(void*) &eeprom,8);
+				eeprom_update_block((const void*) &holdingRegisters,(void*) &myeeprom,8);
 				eeprom_busy_wait();
 				//寫入eeprom//
 
@@ -330,7 +330,7 @@ int main(void)
 
 
 sei();
-	eeprom_read_block((void*) &holdingRegisters,(const void*) &eeprom,8);
+	eeprom_read_block((void*) &holdingRegisters,(const void*) &myeeprom,8);
 	
 
 wdt_enable(7);

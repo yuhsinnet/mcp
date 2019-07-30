@@ -366,7 +366,7 @@ END GROUP
 .eeprom         0x00810000        0x8
  *(.eeprom*)
  .eeprom        0x00810000        0x8 build/Release/production/_ext/1472/main.o
-                0x00810000                eeprom
+                0x00810000                myeeprom
                 0x00810008                __eeprom_end = .
 
 .fuse
@@ -433,11 +433,11 @@ END GROUP
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000     0x1a7f
+.debug_info     0x00000000     0x1a81
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0x5f4 c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const/crtatmega328p.o
- .debug_info    0x000005f4      0x974 build/Release/production/_ext/1472/main.o
- .debug_info    0x00000f68      0xb17 build/Release/production/_ext/1472/yaMBSiavr.o
+ .debug_info    0x000005f4      0x976 build/Release/production/_ext/1472/main.o
+ .debug_info    0x00000f6a      0xb17 build/Release/production/_ext/1472/yaMBSiavr.o
 
 .debug_abbrev   0x00000000      0x989
  *(.debug_abbrev)
