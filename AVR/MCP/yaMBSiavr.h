@@ -147,7 +147,7 @@ THE POSSIBILITY OF SUCH DAMAGE.
 #else
 #error "no definition available"
 #endif
-
+#define F_CPU 20000000UL
 #ifndef F_CPU
 #error " F_CPU not defined "
 #else

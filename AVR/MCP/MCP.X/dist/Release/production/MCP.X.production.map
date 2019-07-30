@@ -1,0 +1,758 @@
+Archive member included to satisfy reference by file (symbol)
+
+c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_exit.o)
+                              c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const/crtatmega328p.o (exit)
+c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_tablejump2.o)
+                              build/Release/production/_ext/1472/main.o (__tablejump2__)
+c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_copy_data.o)
+                              build/Release/production/_ext/1472/main.o (__do_copy_data)
+c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libatmega328p.a(eerd_block.o)
+                              build/Release/production/_ext/1472/main.o (eeprom_read_block)
+c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libatmega328p.a(eeupd_block_M.o)
+                              build/Release/production/_ext/1472/main.o (eeprom_update_block)
+c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libatmega328p.a(eeupd_byte.o)
+                              c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libatmega328p.a(eeupd_block_M.o) (eeprom_update_r18)
+c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_xload_1.o)
+                              c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libatmega328p.a(eeupd_block_M.o) (__xload_1)
+
+Allocating common symbols
+Common symbol       size              file
+
+timer01_start       0x1               build/Release/production/_ext/1472/main.o
+holdingRegisters    0x8               build/Release/production/_ext/1472/main.o
+timer02_up          0x1               build/Release/production/_ext/1472/main.o
+adc_results         0x8               build/Release/production/_ext/1472/main.o
+inputRegisters      0x10              build/Release/production/_ext/1472/main.o
+timer01_up          0x1               build/Release/production/_ext/1472/main.o
+timer02_start       0x1               build/Release/production/_ext/1472/main.o
+rxbuffer            0x100             build/Release/production/_ext/1472/main.o
+
+Discarded input sections
+
+ .data          0x00000000        0x0 c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const/crtatmega328p.o
+ .bss           0x00000000        0x0 c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const/crtatmega328p.o
+ .text          0x00000000        0x0 build/Release/production/_ext/1472/main.o
+ .data          0x00000000        0x0 build/Release/production/_ext/1472/main.o
+ .bss           0x00000000        0x0 build/Release/production/_ext/1472/main.o
+ .text.io_conf  0x00000000        0x6 build/Release/production/_ext/1472/main.o
+ .bss.instate   0x00000000        0x1 build/Release/production/_ext/1472/main.o
+ .text          0x00000000        0x0 build/Release/production/_ext/1472/yaMBSiavr.o
+ .data          0x00000000        0x0 build/Release/production/_ext/1472/yaMBSiavr.o
+ .bss           0x00000000        0x0 build/Release/production/_ext/1472/yaMBSiavr.o
+ .text.modbusGetAddress
+                0x00000000        0x6 build/Release/production/_ext/1472/yaMBSiavr.o
+ .text.listRegisterCopy
+                0x00000000       0x24 build/Release/production/_ext/1472/yaMBSiavr.o
+ .bss.modBusStaMaStates
+                0x00000000        0x1 build/Release/production/_ext/1472/yaMBSiavr.o
+ .text          0x00000000        0x0 c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_exit.o)
+ .data          0x00000000        0x0 c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_exit.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_exit.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_exit.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_exit.o)
+ .text.libgcc   0x00000000        0x0 c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_exit.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_exit.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_exit.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_exit.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_exit.o)
+ .text          0x00000000        0x0 c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_tablejump2.o)
+ .data          0x00000000        0x0 c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_tablejump2.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_tablejump2.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_tablejump2.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_tablejump2.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_tablejump2.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_tablejump2.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_tablejump2.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_tablejump2.o)
+ .text          0x00000000        0x0 c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_copy_data.o)
+ .data          0x00000000        0x0 c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_copy_data.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_copy_data.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_copy_data.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00000000        0x0 c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_copy_data.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_copy_data.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_copy_data.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_copy_data.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_copy_data.o)
+ .text          0x00000000        0x0 c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libatmega328p.a(eerd_block.o)
+ .data          0x00000000        0x0 c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libatmega328p.a(eerd_block.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libatmega328p.a(eerd_block.o)
+ .text          0x00000000        0x0 c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libatmega328p.a(eeupd_block_M.o)
+ .data          0x00000000        0x0 c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libatmega328p.a(eeupd_block_M.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libatmega328p.a(eeupd_block_M.o)
+ .text          0x00000000        0x0 c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libatmega328p.a(eeupd_byte.o)
+ .data          0x00000000        0x0 c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libatmega328p.a(eeupd_byte.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libatmega328p.a(eeupd_byte.o)
+ .text          0x00000000        0x0 c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_xload_1.o)
+ .data          0x00000000        0x0 c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_xload_1.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_xload_1.o)
+ .text.libgcc.mul
+                0x00000000        0x0 c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_xload_1.o)
+ .text.libgcc.div
+                0x00000000        0x0 c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_xload_1.o)
+ .text.libgcc.prologue
+                0x00000000        0x0 c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_xload_1.o)
+ .text.libgcc.builtins
+                0x00000000        0x0 c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_xload_1.o)
+ .text.libgcc.fmul
+                0x00000000        0x0 c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_xload_1.o)
+ .text.libgcc.fixed
+                0x00000000        0x0 c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_xload_1.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00008000         xr
+data             0x00800100         0x00000800         rw !x
+eeprom           0x00810000         0x00000400         rw !x
+fuse             0x00820000         0x00000003         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+user_signatures  0x00850000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const/crtatmega328p.o
+                0x00000001                __MPLAB_BUILD = 0x1
+LOAD build/Release/production/_ext/1472/main.o
+LOAD build/Release/production/_ext/1472/yaMBSiavr.o
+START GROUP
+LOAD c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libm.a
+LOAD c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libm.a
+END GROUP
+START GROUP
+LOAD c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a
+LOAD c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libm.a
+LOAD c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libc.a
+LOAD c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libatmega328p.a
+END GROUP
+                0x00000000                __TEXT_REGION_ORIGIN__ = DEFINED (__TEXT_REGION_ORIGIN__)?__TEXT_REGION_ORIGIN__:0x0
+                [0x00800100]                __DATA_REGION_ORIGIN__ = DEFINED (__DATA_REGION_ORIGIN__)?__DATA_REGION_ORIGIN__:0x800060
+                [0x00008000]                __TEXT_REGION_LENGTH__ = DEFINED (__TEXT_REGION_LENGTH__)?__TEXT_REGION_LENGTH__:0x20000
+                [0x00000800]                __DATA_REGION_LENGTH__ = DEFINED (__DATA_REGION_LENGTH__)?__DATA_REGION_LENGTH__:0xffa0
+                [0x00000400]                __EEPROM_REGION_LENGTH__ = DEFINED (__EEPROM_REGION_LENGTH__)?__EEPROM_REGION_LENGTH__:0x10000
+                [0x00000003]                __FUSE_REGION_LENGTH__ = DEFINED (__FUSE_REGION_LENGTH__)?__FUSE_REGION_LENGTH__:0x400
+                0x00000400                __LOCK_REGION_LENGTH__ = DEFINED (__LOCK_REGION_LENGTH__)?__LOCK_REGION_LENGTH__:0x400
+                0x00000400                __SIGNATURE_REGION_LENGTH__ = DEFINED (__SIGNATURE_REGION_LENGTH__)?__SIGNATURE_REGION_LENGTH__:0x400
+                0x00000400                __USER_SIGNATURE_REGION_LENGTH__ = DEFINED (__USER_SIGNATURE_REGION_LENGTH__)?__USER_SIGNATURE_REGION_LENGTH__:0x400
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000      0x12c
+ *(.vectors)
+ .vectors       0x00000000       0x68 c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const/crtatmega328p.o
+                0x00000000                __vector_default
+                0x00000000                __vectors
+ *(.vectors)
+ *(.progmem.gcc*)
+ .progmem.gcc_sw_table.modbusGet
+                0x00000068       0x20 build/Release/production/_ext/1472/main.o
+ *(.dinit)
+ .dinit         0x00000088       0x4f data_init
+                0x000000d8                . = ALIGN (0x2)
+ *fill*         0x000000d7        0x1 
+                0x000000d8                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x000000d8        0x0 linker stubs
+ *(.trampolines*)
+                0x000000d8                __trampolines_end = .
+ *libprintf_flt.a:*(.progmem.data)
+ *libc.a:*(.progmem.data)
+                0x000000d8                . = ALIGN (0x2)
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x000000d8                __ctors_start = .
+ *(.ctors)
+                0x000000d8                __ctors_end = .
+                0x000000d8                __dtors_start = .
+ *(.dtors)
+                0x000000d8                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x000000d8        0x0 c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const/crtatmega328p.o
+                0x000000d8                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x000000d8        0xc c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const/crtatmega328p.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x000000e4       0x3c c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_copy_data.o)
+                0x000000e4                __do_copy_data
+                0x00000112                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000120        0x8 c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const/crtatmega328p.o
+ *(.init9)
+                0x00000128                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00000128        0x0 c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_exit.o)
+                0x00000128                _exit
+                0x00000128                exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00000128        0x4 c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_exit.o)
+ *(.fini0)
+                0x0000012c                _etext = .
+
+.data           0x00800100        0x0 load address 0x0000012c
+                [!provide]                PROVIDE (__data_start, .)
+ *(.gnu.linkonce.d*)
+ *(.gnu.linkonce.r*)
+                0x00800100                . = ALIGN (0x2)
+                0x00800100                _edata = .
+                [!provide]                PROVIDE (__data_end, .)
+
+.bss            0x00800100      0x124
+                [!provide]                PROVIDE (__bss_start, .)
+ *(COMMON)
+ COMMON         0x00800100      0x124 build/Release/production/_ext/1472/main.o
+                0x00800100                timer01_start
+                0x00800101                holdingRegisters
+                0x00800109                timer02_up
+                0x0080010a                adc_results
+                0x00800112                inputRegisters
+                0x00800122                timer01_up
+                0x00800123                timer02_start
+                0x00800124                rxbuffer
+                [!provide]                PROVIDE (__bss_end, .)
+                0x0000012c                __data_load_start = LOADADDR (.data)
+                0x0000012c                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00800224        0x0
+                [!provide]                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                [!provide]                PROVIDE (__noinit_end, .)
+                0x00800224                _end = .
+
+.eeprom         0x00810000        0x8
+ *(.eeprom*)
+ .eeprom        0x00810000        0x8 build/Release/production/_ext/1472/main.o
+                0x00810000                eeprom
+                0x00810008                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.user_signatures
+ *(.user_signatures*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000       0x2f
+ *(.comment)
+ .comment       0x00000000       0x2f build/Release/production/_ext/1472/main.o
+                                 0x30 (size before relaxing)
+ .comment       0x0000002f       0x30 build/Release/production/_ext/1472/yaMBSiavr.o
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x120
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x68 build/Release/production/_ext/1472/main.o
+ .debug_aranges
+                0x00000068       0xb8 build/Release/production/_ext/1472/yaMBSiavr.o
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000     0x1a7f
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000      0x5f4 c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const/crtatmega328p.o
+ .debug_info    0x000005f4      0x974 build/Release/production/_ext/1472/main.o
+ .debug_info    0x00000f68      0xb17 build/Release/production/_ext/1472/yaMBSiavr.o
+
+.debug_abbrev   0x00000000      0x989
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x5a2 c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const/crtatmega328p.o
+ .debug_abbrev  0x000005a2      0x1f5 build/Release/production/_ext/1472/main.o
+ .debug_abbrev  0x00000797      0x1f2 build/Release/production/_ext/1472/yaMBSiavr.o
+
+.debug_line     0x00000000      0xace
+ *(.debug_line .debug_line.* .debug_line_end)
+ .debug_line    0x00000000       0x1a c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const/crtatmega328p.o
+ .debug_line    0x0000001a      0x44a build/Release/production/_ext/1472/main.o
+ .debug_line    0x00000464      0x66a build/Release/production/_ext/1472/yaMBSiavr.o
+
+.debug_frame    0x00000000      0x3d8
+ *(.debug_frame)
+ .debug_frame   0x00000000      0x170 build/Release/production/_ext/1472/main.o
+ .debug_frame   0x00000170      0x268 build/Release/production/_ext/1472/yaMBSiavr.o
+
+.debug_str      0x00000000      0x2e9
+ *(.debug_str)
+ .debug_str     0x00000000      0x208 c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const/crtatmega328p.o
+ .debug_str     0x00000208       0xa3 build/Release/production/_ext/1472/main.o
+ .debug_str     0x000002ab       0x3e build/Release/production/_ext/1472/yaMBSiavr.o
+
+.debug_loc      0x00000000      0x821
+ *(.debug_loc)
+ .debug_loc     0x00000000      0x165 build/Release/production/_ext/1472/main.o
+ .debug_loc     0x00000165      0x6bc build/Release/production/_ext/1472/yaMBSiavr.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges   0x00000000      0x100
+ *(.debug_ranges)
+ .debug_ranges  0x00000000       0x58 build/Release/production/_ext/1472/main.o
+ .debug_ranges  0x00000058       0xa8 build/Release/production/_ext/1472/yaMBSiavr.o
+
+.debug_macro
+ *(.debug_macro)
+OUTPUT(dist/Release/production/MCP.X.production.elf elf32-avr)
+LOAD linker stubs
+LOAD data_init
+
+.text           0x00000dbe        0x4
+ .text          0x00000dbe        0x4 c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const/crtatmega328p.o
+                0x00000dbe                __vector_22
+                0x00000dbe                __vector_1
+                0x00000dbe                __vector_24
+                0x00000dbe                __vector_12
+                0x00000dbe                __bad_interrupt
+                0x00000dbe                __vector_6
+                0x00000dbe                __vector_3
+                0x00000dbe                __vector_23
+                0x00000dbe                __vector_25
+                0x00000dbe                __vector_11
+                0x00000dbe                __vector_13
+                0x00000dbe                __vector_17
+                0x00000dbe                __vector_5
+                0x00000dbe                __vector_4
+                0x00000dbe                __vector_9
+                0x00000dbe                __vector_2
+                0x00000dbe                __vector_15
+                0x00000dbe                __vector_8
+                0x00000dbe                __vector_14
+                0x00000dbe                __vector_10
+
+.note.gnu.avr.deviceinfo
+                0x00000000       0x40
+ .note.gnu.avr.deviceinfo
+                0x00000000       0x40 c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const/crtatmega328p.o
+
+.text.time1ms_start
+                0x00000c62       0x28
+ .text.time1ms_start
+                0x00000c62       0x28 build/Release/production/_ext/1472/main.o
+                0x00000c62                time1ms_start
+
+.text.timer0100us_start
+                0x00000d52       0x12
+ .text.timer0100us_start
+                0x00000d52       0x12 build/Release/production/_ext/1472/main.o
+                0x00000d52                timer0100us_start
+
+.text.SetOuts   0x00000d1c       0x22
+ .text.SetOuts  0x00000d1c       0x22 build/Release/production/_ext/1472/main.o
+                0x00000d1c                SetOuts
+
+.text.ReadIns   0x00000d90        0xc
+ .text.ReadIns  0x00000d90        0xc build/Release/production/_ext/1472/main.o
+                0x00000d90                ReadIns
+
+.text.__vector_7
+                0x00000792       0xd0
+ .text.__vector_7
+                0x00000792       0xd0 build/Release/production/_ext/1472/main.o
+                0x00000792                __vector_7
+
+.text.__vector_16
+                0x00000b26       0x48
+ .text.__vector_16
+                0x00000b26       0x48 build/Release/production/_ext/1472/main.o
+                0x00000b26                __vector_16
+
+.text.modbusGet
+                0x000002c2      0x15c
+ .text.modbusGet
+                0x000002c2      0x15c build/Release/production/_ext/1472/main.o
+                0x000002c2                modbusGet
+
+.text.__vector_21
+                0x00000862       0xa6
+ .text.__vector_21
+                0x00000862       0xa6 build/Release/production/_ext/1472/main.o
+                0x00000862                __vector_21
+
+.text.main      0x0000041e      0x146
+ .text.main     0x0000041e      0x146 build/Release/production/_ext/1472/main.o
+                0x0000041e                main
+
+.bss.error_cour.1888
+                0x00800232        0x1
+ .bss.error_cour.1888
+                0x00800232        0x1 build/Release/production/_ext/1472/main.o
+
+.data.first_convervision.1880
+                0x00800233        0x1 load address 0x00000dc2
+ .data.first_convervision.1880
+                0x00800233        0x1 build/Release/production/_ext/1472/main.o
+
+.bss.i.1858     0x00800224        0x2
+ .bss.i.1858    0x00800224        0x2 build/Release/production/_ext/1472/main.o
+
+.bss.j.1859     0x00800226        0x2
+ .bss.j.1859    0x00800226        0x2 build/Release/production/_ext/1472/main.o
+
+.bss.timer02_CV.1849
+                0x00800228        0x2
+ .bss.timer02_CV.1849
+                0x00800228        0x2 build/Release/production/_ext/1472/main.o
+
+.bss.timer01_CV.1848
+                0x0080022a        0x2
+ .bss.timer01_CV.1848
+                0x0080022a        0x2 build/Release/production/_ext/1472/main.o
+
+.bss.i.1847     0x0080022c        0x2
+ .bss.i.1847    0x0080022c        0x2 build/Release/production/_ext/1472/main.o
+
+.bss.outstate   0x00800234        0x1
+ .bss.outstate  0x00800234        0x1 build/Release/production/_ext/1472/main.o
+                0x00800234                outstate
+
+.text.modbusGetBusState
+                0x00000db2        0x6
+ .text.modbusGetBusState
+                0x00000db2        0x6 build/Release/production/_ext/1472/yaMBSiavr.o
+                0x00000db2                modbusGetBusState
+
+.text.modbusSetAddress
+                0x00000db8        0x6
+ .text.modbusSetAddress
+                0x00000db8        0x6 build/Release/production/_ext/1472/yaMBSiavr.o
+                0x00000db8                modbusSetAddress
+
+.text.crc16     0x00000908       0x8c
+ .text.crc16    0x00000908       0x8c build/Release/production/_ext/1472/yaMBSiavr.o
+                0x00000908                crc16
+
+.text.listBitCopy
+                0x00000aa4       0x82
+ .text.listBitCopy
+                0x00000aa4       0x82 build/Release/production/_ext/1472/yaMBSiavr.o
+                0x00000aa4                listBitCopy
+
+.text.modbusReset
+                0x00000d64       0x10
+ .text.modbusReset
+                0x00000d64       0x10 build/Release/production/_ext/1472/yaMBSiavr.o
+                0x00000d64                modbusReset
+
+.text.modbusTickTimer
+                0x00000994       0x8c
+ .text.modbusTickTimer
+                0x00000994       0x8c build/Release/production/_ext/1472/yaMBSiavr.o
+                0x00000994                modbusTickTimer
+
+.text.__vector_18
+                0x000006a4       0xee
+ .text.__vector_18
+                0x000006a4       0xee build/Release/production/_ext/1472/yaMBSiavr.o
+                0x000006a4                __vector_18
+
+.text.__vector_19
+                0x00000a20       0x84
+ .text.__vector_19
+                0x00000a20       0x84 build/Release/production/_ext/1472/yaMBSiavr.o
+                0x00000a20                __vector_19
+
+.text.__vector_20
+                0x00000b6e       0x48
+ .text.__vector_20
+                0x00000b6e       0x48 build/Release/production/_ext/1472/yaMBSiavr.o
+                0x00000b6e                __vector_20
+
+.text.modbusInit
+                0x00000cb0       0x24
+ .text.modbusInit
+                0x00000cb0       0x24 build/Release/production/_ext/1472/yaMBSiavr.o
+                0x00000cb0                modbusInit
+
+.text.modbusSendMessage
+                0x00000bfa       0x3a
+ .text.modbusSendMessage
+                0x00000bfa       0x3a build/Release/production/_ext/1472/yaMBSiavr.o
+                0x00000bfa                modbusSendMessage
+
+.text.modbusSendException
+                0x00000d3e       0x14
+ .text.modbusSendException
+                0x00000d3e       0x14 build/Release/production/_ext/1472/yaMBSiavr.o
+                0x00000d3e                modbusSendException
+
+.text.modbusRequestedAmount
+                0x00000d74        0xe
+ .text.modbusRequestedAmount
+                0x00000d74        0xe build/Release/production/_ext/1472/yaMBSiavr.o
+                0x00000d74                modbusRequestedAmount
+
+.text.modbusRequestedAddress
+                0x00000d82        0xe
+ .text.modbusRequestedAddress
+                0x00000d82        0xe build/Release/production/_ext/1472/yaMBSiavr.o
+                0x00000d82                modbusRequestedAddress
+
+.text.intToModbusRegister
+                0x00000c8a       0x26
+ .text.intToModbusRegister
+                0x00000c8a       0x26 build/Release/production/_ext/1472/yaMBSiavr.o
+                0x00000c8a                intToModbusRegister
+
+.text.modbusRegisterToInt
+                0x00000c34       0x2e
+ .text.modbusRegisterToInt
+                0x00000c34       0x2e build/Release/production/_ext/1472/yaMBSiavr.o
+                0x00000c34                modbusRegisterToInt
+
+.text.modbusExchangeRegisters
+                0x00000564      0x140
+ .text.modbusExchangeRegisters
+                0x00000564      0x140 build/Release/production/_ext/1472/yaMBSiavr.o
+                0x00000564                modbusExchangeRegisters
+
+.text.modbusExchangeBits
+                0x0000012c      0x196
+ .text.modbusExchangeBits
+                0x0000012c      0x196 build/Release/production/_ext/1472/yaMBSiavr.o
+                0x0000012c                modbusExchangeBits
+
+.bss.Address    0x00800235        0x1
+ .bss.Address   0x00800235        0x1 build/Release/production/_ext/1472/yaMBSiavr.o
+                0x00800235                Address
+
+.data.PacketTopIndex
+                0x00800236        0x1 load address 0x00000dc3
+ .data.PacketTopIndex
+                0x00800236        0x1 build/Release/production/_ext/1472/yaMBSiavr.o
+                0x00800236                PacketTopIndex
+
+.bss.modbusTimer
+                0x0080022e        0x2
+ .bss.modbusTimer
+                0x0080022e        0x2 build/Release/production/_ext/1472/yaMBSiavr.o
+                0x0080022e                modbusTimer
+
+.bss.BusState   0x00800237        0x1
+ .bss.BusState  0x00800237        0x1 build/Release/production/_ext/1472/yaMBSiavr.o
+                0x00800237                BusState
+
+.bss.DataPos    0x00800230        0x2
+ .bss.DataPos   0x00800230        0x2 build/Release/production/_ext/1472/yaMBSiavr.o
+                0x00800230                DataPos
+
+.text.libgcc    0x00000d9c        0xc
+ .text.libgcc   0x00000d9c        0xc c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_tablejump2.o)
+                0x00000d9c                __tablejump2__
+
+.text.avrlibc   0x00000cd4       0x24
+ .text.avrlibc  0x00000cd4       0x24 c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libatmega328p.a(eerd_block.o)
+                0x00000cd4                eeprom_read_block
+                0x00000cdc                eeprom_read_blraw
+
+.text.avrlibc   0x00000bb6       0x44
+ .text.avrlibc  0x00000bb6       0x44 c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libatmega328p.a(eeupd_block_M.o)
+                0x00000bb6                eeprom_update_block
+
+.text.avrlibc   0x00000cf8       0x24
+ .text.avrlibc  0x00000cf8       0x24 c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/../../../../avr/lib/avr5/memx-const\libatmega328p.a(eeupd_byte.o)
+                0x00000cf8                eeprom_update_byte
+                0x00000cfa                eeprom_update_r18
+
+.text.libgcc    0x00000da8        0xa
+ .text.libgcc   0x00000da8        0xa c:/program files (x86)/microchip/xc8/v2.05/avr/bin/../lib/gcc/avr/5.4.0/avr5/memx-const\libgcc.a(_xload_1.o)
+                0x00000da8                __xload_1

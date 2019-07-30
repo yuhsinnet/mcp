@@ -15,7 +15,7 @@
 *	input registers: 0 to 3
 *	holding registers: 0 to 3
 */
-
+#define F_CPU 20000000UL
 #define clientAddress 0x01
 
 #define ADC_MUX_SETTING 0x0
@@ -24,7 +24,7 @@
 #include <avr/interrupt.h>
 #include <avr/wdt.h>
 #include <stdbool.h>
-//#define F_CPU 20000000
+
 #include "yaMBSiavr.h"
 #include "ioconfig.h"
 #include <util/delay.h>
