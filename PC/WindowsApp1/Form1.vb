@@ -1,5 +1,5 @@
 ﻿Imports EasyModbus
-
+Imports System.Text
 
 Public Class Form1
 
@@ -35,6 +35,7 @@ Public Class Form1
 
         If cc.Connected = False Then
 
+            cc.SerialPort = ComboBox1.SelectedItem.ToString()
             cc.Connect()
 
 
@@ -71,6 +72,18 @@ Public Class Form1
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         Timer1.Enabled = False
         TextBox1.Text = cc.ReadInputRegisters(0, 1)(0).ToString()
+        'TextBox4.Text = Encoding.ASCII.GetString(cc.sendData)
+
+        Dim data As String
+
+        For Each bytes As Byte In cc.receiveData
+
+            data = data + Hex(bytes).ToString.PadLeft(2, "0") + " "
+
+        Next
+
+        TextBox5.Text = data
+
         Timer1.Enabled = True
 
 
@@ -92,5 +105,15 @@ Public Class Form1
 
         Timer2.Enabled = False
 
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+
+        Dim Present_value As Integer = CInt(TextBox1.Text)
+        Dim precent As Single = CType(TextBox4.Text, Single) * 0.01
+        Dim diff_value As Integer = Present_value * precent
+
+        TextBox3.Text = Present_value + diff_value
+        TextBox2.Text = Present_value - diff_value
     End Sub
 End Class

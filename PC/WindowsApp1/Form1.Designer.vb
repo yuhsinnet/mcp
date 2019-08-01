@@ -34,12 +34,16 @@ Partial Class Form1
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'TextBox1
         '
         Me.TextBox1.Font = New System.Drawing.Font("新細明體", 32.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(188, 111)
+        Me.TextBox1.Location = New System.Drawing.Point(191, 56)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(119, 59)
         Me.TextBox1.TabIndex = 0
@@ -47,7 +51,7 @@ Partial Class Form1
         'Connect_But
         '
         Me.Connect_But.Font = New System.Drawing.Font("新細明體", 32.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
-        Me.Connect_But.Location = New System.Drawing.Point(568, 283)
+        Me.Connect_But.Location = New System.Drawing.Point(791, 237)
         Me.Connect_But.Name = "Connect_But"
         Me.Connect_But.Size = New System.Drawing.Size(182, 64)
         Me.Connect_But.TabIndex = 1
@@ -61,7 +65,7 @@ Partial Class Form1
         'TextBox2
         '
         Me.TextBox2.Font = New System.Drawing.Font("新細明體", 32.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(467, 143)
+        Me.TextBox2.Location = New System.Drawing.Point(470, 88)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(119, 59)
         Me.TextBox2.TabIndex = 2
@@ -69,7 +73,7 @@ Partial Class Form1
         'TextBox3
         '
         Me.TextBox3.Font = New System.Drawing.Font("新細明體", 32.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(467, 78)
+        Me.TextBox3.Location = New System.Drawing.Point(470, 23)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(119, 59)
         Me.TextBox3.TabIndex = 3
@@ -77,7 +81,7 @@ Partial Class Form1
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("新細明體", 32.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
-        Me.Button1.Location = New System.Drawing.Point(599, 82)
+        Me.Button1.Location = New System.Drawing.Point(602, 27)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(151, 107)
         Me.Button1.TabIndex = 4
@@ -92,7 +96,7 @@ Partial Class Form1
         '
         Me.ComboBox1.Font = New System.Drawing.Font("新細明體", 32.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(568, 226)
+        Me.ComboBox1.Location = New System.Drawing.Point(791, 180)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(182, 51)
         Me.ComboBox1.TabIndex = 5
@@ -101,7 +105,7 @@ Partial Class Form1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("新細明體", 32.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
-        Me.Label1.Location = New System.Drawing.Point(313, 81)
+        Me.Label1.Location = New System.Drawing.Point(316, 26)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(148, 43)
         Me.Label1.TabIndex = 6
@@ -111,7 +115,7 @@ Partial Class Form1
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("新細明體", 32.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
-        Me.Label2.Location = New System.Drawing.Point(313, 146)
+        Me.Label2.Location = New System.Drawing.Point(316, 91)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(148, 43)
         Me.Label2.TabIndex = 7
@@ -121,17 +125,58 @@ Partial Class Form1
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("新細明體", 32.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
-        Me.Label3.Location = New System.Drawing.Point(34, 114)
+        Me.Label3.Location = New System.Drawing.Point(37, 59)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(148, 43)
         Me.Label3.TabIndex = 8
         Me.Label3.Text = "現在值"
         '
+        'TextBox4
+        '
+        Me.TextBox4.Font = New System.Drawing.Font("新細明體", 32.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.TextBox4.Location = New System.Drawing.Point(470, 163)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(119, 59)
+        Me.TextBox4.TabIndex = 9
+        Me.TextBox4.Text = "10"
+        '
+        'TextBox5
+        '
+        Me.TextBox5.Font = New System.Drawing.Font("新細明體", 32.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.TextBox5.Location = New System.Drawing.Point(12, 237)
+        Me.TextBox5.Name = "TextBox5"
+        Me.TextBox5.Size = New System.Drawing.Size(773, 59)
+        Me.TextBox5.TabIndex = 10
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("新細明體", 32.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Label4.Location = New System.Drawing.Point(170, 171)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(294, 43)
+        Me.Label4.TabIndex = 11
+        Me.Label4.Text = "計算百分比(%)"
+        '
+        'Button2
+        '
+        Me.Button2.Font = New System.Drawing.Font("新細明體", 32.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(136, Byte))
+        Me.Button2.Location = New System.Drawing.Point(602, 163)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(151, 59)
+        Me.Button2.TabIndex = 12
+        Me.Button2.Text = "計算"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 382)
+        Me.ClientSize = New System.Drawing.Size(985, 343)
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.TextBox5)
+        Me.Controls.Add(Me.TextBox4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
@@ -159,4 +204,8 @@ Partial Class Form1
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
+    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Button2 As Button
 End Class
