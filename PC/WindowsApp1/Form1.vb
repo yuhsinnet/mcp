@@ -116,4 +116,22 @@ Public Class Form1
         TextBox3.Text = Present_value + diff_value
         TextBox2.Text = Present_value - diff_value
     End Sub
+
+    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+
+        Dim Present_value As Integer = CInt(TextBox1.Text)
+        Dim precent As Single = CType(TextBox4.Text, Single) * 0.01
+        Dim diff_value As Integer = Present_value * precent
+
+        TextBox2.Text = Present_value + diff_value
+
+    End Sub
+
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+        Dim Present_value As Integer = CInt(TextBox1.Text)
+        Dim precent As Single = CType(TextBox4.Text, Single) * 0.01
+        Dim diff_value As Integer = Present_value * precent
+
+        TextBox3.Text = Present_value + diff_value
+    End Sub
 End Class
